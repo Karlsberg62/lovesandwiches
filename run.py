@@ -49,7 +49,7 @@ def update_worksheet(data,worksheet):
     """
     Updates surplus or sales worksheet, add new row with the list data provided
     """
-     print(f"Updating {worksheet} worksheet.....\n")
+    print(f"Updating {worksheet} worksheet.....\n")
     worksheet_to_update = SHEET.worksheet(worksheet)
     worksheet_to_update.append_row(data)
     print(f"{worksheet} worksheet updated successfully.\n")
