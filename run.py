@@ -1,6 +1,5 @@
 import gspread
 from google.oauth2.service_account import Credentials
-from pprint import pprint
 
 SCOPE = [
     "https://www.googleapis.com/auth/spreadsheets",
@@ -18,11 +17,11 @@ def get_sales_data():
     Get Sales Figures from the user
     """
     while True:
-        print("Please enter sales data from the last market")
-        print("Data should be six numbers, seperated by commas")
+        print("Please enter sales data from the last market.")
+        print("Data should be six numbers, seperated by commas.")
         print("Example: 10,20,30,40,50,60\n")
 
-        data_str = input("Enter your data here: ")
+        data_str = input("Enter your data here:\n")
         sales_data = data_str.split(",")
         validate_data(sales_data)
 
